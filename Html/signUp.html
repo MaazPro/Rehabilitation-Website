@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../Css/navigation.css">
+    <style>
+        body {
+            background-image: url('../Images/SU.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        header{
+            color:white;
+            text-align:center;
+        }
+
+        section{
+            margin-top: 80px;    
+        }
+       
+
+        p{
+            color: white;
+            margin-left: 30px;
+
+        }
+
+        .textbox{
+            width: 200px;
+            height: 20px;
+ 
+        }
+        textarea{
+            min-width: 340px;
+            min-height: 300px;
+        }
+        #btn{
+            width : 100px;
+            height : 25px;
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+        <header>
+                <h1>Sign Up For Rehabilitation</h1>
+        </header>
+        <br>
+        <br>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" title="Home Page">Home</a></li>
+            <li><a href="overview.html" target="_blank" title="Overview">Overview</a></li>
+            <li><a href="gallery.html" target="_blank" title="Gallery/Success Stories">Gallery</a></li>
+            <li class="active"><a href="#" title="Sign up">Sign up for Rehab</a></li>
+        </ul>
+        
+    </nav>
+    <form name = "myForm" method="POST" action="process.php">
+    <section>
+        <hr>
+        <br>
+        <br>
+        <p>
+            First Name: <input type = "text" class = "textbox" placeholder="Type Here" style = "margin-left: 50px"><br><br>
+            Lasst Name: <input type = "text" class = "textbox" placeholder="Type Here" style = "margin-left: 40px"><br><br>
+            Gender:<br>
+            Male: <input type = "radio" name = "gender" value = "male"><br>
+            Female: <input type = "radio" name = "gender" value = "female"><br><br>
+            Date of Birth:<input type = "date" class = "textbox" style = "margin-left: 40px"><br><br>
+            Email Address: <input type = "text"class = "textbox" placeholder="Type Here" style = "margin-left: 23px"><br><br>       
+            Contact Number: <input type = "text"class = "textbox" placeholder="Type Here"><br><br>
+            Country: 
+            <select class = "textbox" style = "margin-left: 70px">
+            <option value = "-1">Please Select A Country</option>
+            <option value = "1">Malaysia</option>
+            <option value = "2">India</option>
+            <option value = "3">Singapore</option>
+            <option value = "4">South Korea</option>
+            <option value = "5">Japan</option>
+            <option value = "6">China</option>
+            <option value = "7">Vietnam</option>
+            <option value = "8">Thailand</option>
+            <option value = "9">Sri Lanka</option>
+            <option value = "10">Indonesia</option>
+            </select><br><br>
+    
+            Comments:<br> 
+            <textarea>
+
+            </textarea>
+            <br>
+            <br>
+            <input type = "submit" value = "Submit" id = "btn" name = "submit">
+        </p>
+    </section>
+</form>
+</body>
+
+</html>
